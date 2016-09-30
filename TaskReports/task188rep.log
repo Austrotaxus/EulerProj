@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.1)  1 OCT 2016 01:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.1)  1 OCT 2016 01:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,12 +290,6 @@ Overfull \hbox (4.95532pt too wide) in paragraph at lines 26--27
  []
 
 
-Overfull \hbox (4.4381pt too wide) in paragraph at lines 26--27
-\T2A/cmr/m/n/10.95 пред-став-ля-ет-ся невоз-мож-ным. По-сколь-ку нам необ-хо-ди
--мо по-лу-чить толь-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -395,7 +389,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
 Here is how much of TeX's memory you used:
  8748 strings out of 494440
  121015 string characters out of 6173198
- 252706 words of memory out of 5000000
+ 252698 words of memory out of 5000000
  11949 multiletter control sequences out of 15000+600000
  11410 words of font info for 31 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
@@ -411,9 +405,9 @@ lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on task188rep.pdf (2 pages, 118312 bytes).
+Output written on task188rep.pdf (2 pages, 118491 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
+ 283 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
  40 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
