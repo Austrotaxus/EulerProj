@@ -1,0 +1,2 @@
+# EulerProj
+Another Learning Project
