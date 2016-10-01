@@ -5,7 +5,8 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{dirtytalk}
-
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
 \title{Project Euler Task 188}
 \author{Козиний Сергей}
 \begin{document}    
@@ -23,7 +24,7 @@ Find the last 8 digits of $1777 ↑↑ 1855$.}\\
 
 
 
-Главная, и единственная проблема возникающая при решении Problem 188 - проблема памяти. Размещение в памяти чисел  ${3 ↑↑ 5}$ и больших представляется невозможным. Но поскольку нам необходимо получить только 8 последних цифр числа $1777 ↑↑ 1855$, то для решения проблемы, можно обратиться к свойствам операции $mod$:\\
+Главная и единственная проблема возникающая при решении Problem 188 - проблема памяти. Размещение в памяти чисел  ${3 ↑↑ 5}$ и больших представляется невозможным. Но поскольку нам необходимо получить только 8 последних цифр числа $1777 ↑↑ 1855$, то для решения проблемы, можно обратиться к свойствам операции $mod$:\\
 
 $ (a+b) \quad mod \quad c = ( (a \quad mod \quad c) + (b \quad mod \quad c) )\quad mod \quad c $
 
@@ -41,7 +42,7 @@ hyperExpMod base pow m =
 \end{lstlisting}
 
 Вспомогательная операция ${expMod}$ решает проблему получения остатка от деления $a^b$ на $m$ и использует модифицированный алгоритм бинарного (быстрого) возведения в степень.
-Модификация заключается в том, что на каждой итерации $expMod$ от основания $b$ и аккумулятора $p$ берётся остаток от деления на $m$(что имеем право делать по свойствам операции $mod$). Этим гарантирует то, что при рекурсивном вызове $expMod$, на каждой итерации, $b$ и $p$ будут меньше чем $m$, a следовательно уместятся в память.
+Модификация заключается в том, что на каждой итерации $expMod$ от основания $b$ и аккумулятора $p$ берётся остаток от деления на $m$(что имеем право делать по свойствам операции $mod$). Этим гарантируется то, что при рекурсивном вызове $expMod$, на каждой итерации, $b$ и $p$ будут меньше чем $m$, a следовательно уместятся в память.
 
 \begin{lstlisting}[language=Haskell]
 -- Haskell lang
@@ -52,7 +53,7 @@ expMod b p m = expModIter 1 b p m
                 | otherwise = expModIter (res*b `mod` m) (b`mod`m) (p-1) m
 \end{lstlisting}
 
-Поскольку нам необходимо найти последние восемь цифр данного числа целесоообразно воспользоваться типом $Integer$ который обеспечивает работу с длинной арифметикой (на каждой из итераций $expMod$, $mod \quad m$ будет вычисляться от произведения чисел каждое из которых $\le  10^8$, а значит левый аргумент $mod$ будет $\le  10^{16}$ что может не уместиться в обычныйй $Int$ ). Для этого достаточно указать сигнатуру типа для результирующего значения
+Поскольку нам необходимо найти последние восемь цифр данного числа, целесоообразно воспользоваться типом $Integer$ который обеспечивает работу с длинной арифметикой (на каждой из итераций $expMod$, $mod \quad m$ будет вычисляться от произведения чисел каждое из которых $\le  10^8$, а значит левый аргумент $mod$ будет $\le  10^{16}$ что может не уместиться в обычныйй $Int$ ). Для этого достаточно указать сигнатуру типа для результирующего значения
 \begin{lstlisting}[language=Haskell]
   -- Haskell lang
   task188::Integer
@@ -69,15 +70,19 @@ expMod b p m = expModIter 1 b p m
 
 \end{lstlisting}
 Результат:
-\begin{lstlisting}[language=Bash]
+\begin{lstlisting}
 #Console
 austrotaxus@small-box:~/EulerProj$ stack ghci
-Using main module: Package `EulerProj' component exe:EulerProj-exe with main-is file: /home/austrotaxus/EulerProj/app/Main.hs
-The following GHC options are incompatible with GHCi and have not been passed to it: -threaded
+Using main module: Package `EulerProj' component exe:EulerProj-exe
+with main-is file: /home/austrotaxus/EulerProj/app/Main.hs
+The following GHC options are incompatible with GHCi and have not
+been passed to it: -threaded
 Configuring GHCi with the following packages: EulerProj
 GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
-[1 of 2] Compiling Lib              ( /home/austrotaxus/EulerProj/src/Lib.hs, interpreted )
-[2 of 2] Compiling Main             ( /home/austrotaxus/EulerProj/app/Main.hs, interpreted )
+[1 of 2] Compiling Lib
+( /home/austrotaxus/EulerProj/src/Lib.hs, interpreted )
+[2 of 2] Compiling Main
+( /home/austrotaxus/EulerProj/app/Main.hs, interpreted )
 Ok, modules loaded: Lib, Main. 
 *Main Lib> task188
 95962097
