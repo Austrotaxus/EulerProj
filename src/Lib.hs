@@ -21,6 +21,8 @@ task4 = maximum $ filter (isPoly . toList)[a*b|a<-[999,998..100], b<-[999,998..1
                                          0 -> Nothing
                                          _ -> Just (mod a 10,div a 10)) x
           isPoly x = x == reverse x
+
+task5 = foldl lcm 1 [1..20]
 task78 =head $ runST$ (lookup n)         
     where
       n = 100000::Int
