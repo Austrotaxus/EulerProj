@@ -6,6 +6,7 @@ import Control.Monad
 import Data.STRef
 import qualified Data.List as List
 import qualified Math.NumberTheory.Primes.Factorisation as Factor
+import qualified Data.Map as Map
 task1::Int
 task1 = sum $ filter (\x -> (x `mod` 3 ==0) || (x `mod` 5 ==0))  [1..999]
 
@@ -23,6 +24,10 @@ task4 = maximum $ filter (isPoly . toList)[a*b|a<-[999,998..100], b<-[999,998..1
           isPoly x = x == reverse x
 
 task5 = foldl lcm 1 [1..20]
+
+task6::Integer
+task6 = ((^2) (sum [1..100])) - (sum (map (^2) [1..100]))
+        
 task78 =head $ runST$ (lookup n)         
     where
       n = 100000::Int
@@ -56,4 +61,13 @@ task188 = hyperExpMod 1777 1855 100000000
                 | p==0 = res `mod` m
                 | p `mod` 2 == 0 = expModIter res ((b^2)`mod`m) (div p 2) m
                 | otherwise = expModIter (res*b `mod` m) (b`mod`m) (p-1) m
-
+allTasks:: Map.Map Int String
+allTasks = Map.fromAscList
+           [(1,show task1),
+            (2,show task2),
+            (3,show task3),
+            (4,show task4),
+            (5,show task5),
+            (6,show task6),
+            (78,show task78),
+            (188,show task188)]
