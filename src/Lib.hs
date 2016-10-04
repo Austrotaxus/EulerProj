@@ -1,12 +1,14 @@
 module Lib
-    ( task78 , task188, hyperExpMod
+    ( task78 , task188, task1
     ) where
 import Data.Array.Unboxed
 import Data.Array.ST
 import Control.Monad.ST
 import Control.Monad
 import Data.STRef
-
+task1::Int
+task1 = sum $ filter (\x -> (x `mod` 3 ==0) || (x `mod` 5 ==0))  [1..999]
+    
 task78 =head $ runST$ (lookup n)         
     where
       n = 100000::Int
