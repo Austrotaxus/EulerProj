@@ -1,0 +1,53 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{dirtytalk}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
+\title{Project Euler Task 188}
+\author{Козиний Сергей}
+\begin{document}    
+\maketitle
+\href{''https://projecteuler.net/problem=1''}{Problem 1}
+
+\say{ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.}\\
+
+Задачу можно было бы решить воспользовавшись формулой суммы арифметической прогрессии, а именно:
+
+$S_n = \frac {a_1 -  a_n} 2$
+
+По этой формуле можно было бы для всех чисел от 0 до 999 посчитать сумму всех элементов, которые делятся на 3, прибавить к ним сумму всех элементов, которые делятся на 5 и отнять сумму всех элементов которые делятся на 15. Однако учитывая, что чисел всего 1000, мы можем просто построить список всех чисел от 1 до 999, отфильтровать их по признакоу делимости на 5 или 3, и найти сумму получившегося результата
+
+\begin{lstlisting}[language=Haskell]
+--Haskell lang
+task1::Int
+task1 = sum $ filter (\x -> (x `mod` 3 ==0) || (x `mod` 5 ==0))  [1..999]
+\end{lstlisting}
+
+Результат:
+
+\begin{lstlisting}
+#Console
+austrotaxus@small-box:~/EulerProj$ stack ghci
+Using main module: Package `EulerProj' component exe:EulerProj-exe
+with main-is file: /home/austrotaxus/EulerProj/app/Main.hs
+The following GHC options are incompatible with GHCi and have not
+been passed to it: -threaded
+Configuring GHCi with the following packages: EulerProj
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+[1 of 2] Compiling Lib
+( /home/austrotaxus/EulerProj/src/Lib.hs, interpreted )
+[2 of 2] Compiling Main
+( /home/austrotaxus/EulerProj/app/Main.hs, interpreted )
+Ok, modules loaded: Lib, Main. 
+*Main Lib> task1
+233168
+\end{lstlisting}
+
+
+\end{document}
