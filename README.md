@@ -1,7 +1,7 @@
 # EulerProj
 Another Learning Project
 
-То execute it on your machine run the following commands
+То build and execute it on your machine run the following commands
 
 ```console
 git clone https://github.com/Austrotaxus/EulerProj.git
