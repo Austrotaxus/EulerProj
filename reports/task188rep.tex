@@ -34,7 +34,7 @@ $ a^b \quad mod \quad c $ =  $ (a \quad mod \quad  c)^b  \quad mod \quad c $ \\
 
 Определим операцию $hyperExpMod$ как рекурсивную функцию трёх аргументов(так как она была дана в тексте задания)
 
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
 --Haskell lang
 hyperExpMod base 0 m = 1
 hyperExpMod base pow m =
@@ -44,7 +44,7 @@ hyperExpMod base pow m =
 Вспомогательная операция ${expMod}$ решает проблему получения остатка от деления $a^b$ на $m$ и использует модифицированный алгоритм бинарного (быстрого) возведения в степень.
 Модификация заключается в том, что на каждой итерации $expMod$ от основания $b$ и аккумулятора $p$ берётся остаток от деления на $m$(что имеем право делать по свойствам операции $mod$). Этим гарантируется то, что при рекурсивном вызове $expMod$, на каждой итерации, $b$ и $p$ будут меньше чем $m$, a следовательно уместятся в память.
 
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
 -- Haskell lang
 expMod b p m = expModIter 1 b p m
             expModIter res b p m
@@ -54,7 +54,7 @@ expMod b p m = expModIter 1 b p m
 \end{lstlisting}
 
 Поскольку нам необходимо найти последние восемь цифр данного числа, целесоообразно воспользоваться типом $Integer$ который обеспечивает работу с длинной арифметикой (на каждой из итераций $expMod$, $mod \quad m$ будет вычисляться от произведения чисел каждое из которых $\le  10^8$, а значит левый аргумент $mod$ будет $\le  10^{16}$ что может не уместиться в обычныйй $Int$ ). Для этого достаточно указать сигнатуру типа для результирующего значения
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
   -- Haskell lang
   task188::Integer
   task188 = hyperExpMod 1777 1855 100000000
@@ -70,7 +70,7 @@ expMod b p m = expModIter 1 b p m
 
 \end{lstlisting}
 Результат:
-\begin{lstlisting}
+\begin{lstlisting}frame=single]
 #Console
 austrotaxus@small-box:~/EulerProj$ stack ghci
 Using main module: Package `EulerProj' component exe:EulerProj-exe

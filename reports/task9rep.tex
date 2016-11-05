@@ -1,0 +1,73 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{dirtytalk}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
+\title{Project Euler Task 9}
+\author{Козиний Сергей}
+\begin{document}    
+\maketitle
+\href{''https://projecteuler.net/problem=9''}{Problem 9}
+
+\say{
+
+A Pythagorean triplet is a set of three natural numbers, $a < b < c$, for which,
+$a^2 + b^2 = c^2$
+
+For example, $3^2 + 4^2 = 9 + 16 = 25 = 5^2$.
+
+There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+Find the product abc.
+}\\
+
+Самый простой, очевидный, и главное, допустимый по времени выполнения и памяти способ ---  построить все такие $a,b$ и $c$, что их сумма равна 1000, и найти среди них такую тройку чисел, что:  $a^2 + b^2 = c^2$
+
+Реализация данной идеи черезвычайно проста:
+
+\begin{lstlisting}[language=Haskell, frame=single]
+--Haskell lang
+task9 = head [a*b*(1000-a-b)|
+  b<-[1..1000] ,
+  a<-[1..1000] ,
+  a^2 + b^2 == (1000-a-b)^2 ]
+
+\end{lstlisting} \\*
+Здесь список
+\begin{lstlisting}[language=Haskell, frame=single]
+--Haskell lang
+[a*b*(1000-a-b)|
+  b<-[1..1000] ,
+  a<-[1..1000] ,
+  a^2 + b^2 == (1000-a-b)^2 ]
+\end{lstlisting} \\*
+конструируется при помощи генератора списка; $a, b$ принимают все значения от 1 до 1000, а затем, в результирующем списке задействуются только те значения, для которых выполняется предикат $a^2 + b^2 == (1000-a-b)^2$
+
+Результат:
+\begin{lstlisting}frame=single]
+#Console
+austrotaxus@small-box:~/EulerProj$ stack ghci
+Using main module: Package `EulerProj' component exe:EulerProj-exe
+with main-is file: /home/austrotaxus/EulerProj/app/Main.hs
+The following GHC options are incompatible with GHCi and have not
+been passed to it: -threaded
+Configuring GHCi with the following packages: EulerProj
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+[1 of 2] Compiling Lib
+( /home/austrotaxus/EulerProj/src/Lib.hs, interpreted )
+[2 of 2] Compiling Main
+( /home/austrotaxus/EulerProj/app/Main.hs, interpreted )
+Ok, modules loaded: Lib, Main. 
+*Main Lib> task9
+31875000
+\end{lstlisting}
+
+Проект, содержащий это и другие решения можно найти по адрессу:\\*
+
+\url{https://github.com/Austrotaxus/EulerProj/}
+
+
+\end{document}

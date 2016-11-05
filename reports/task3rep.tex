@@ -7,7 +7,7 @@
 \usepackage{dirtytalk}
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
-\title{Project Euler Task 188}
+\title{Project Euler Task 3}
 \author{Козиний Сергей}
 \begin{document}    
 \maketitle
@@ -21,14 +21,14 @@ What is the largest prime factor of the number 600851475143 ?
 
 
 Для решения данной  проблемы воспользуемся функцией $factorise$ из пакета $arithmoi$, модуля $Math.NumberTheory.Primes.Factorisation $   \\*
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
 factorise :: Integer -> [(Integer, Int)]
 \end{lstlisting}
 
-$factorise$ принимает в качестве аргумента целое число типа $Integer$ и возвращает список пар. В каждой паре на первом месте стоит простое число, являющееся делителем аргумента, а на втором месте --- количество раз, которое данный делитель содержится в аргументе. 
+$factorise$ принимает в качестве аргумента целое число типа $Integer$ и возвращает его каноническое разложение в виде списка пар. В каждой паре на первом месте стоит простое число, являющееся делителем аргумента, а на втором месте --- количество раз, которое данный делитель содержится в аргументе. 
 
 Так, программа нахождения максимального простого делителя числа 600851475143 будет выглядеть следующим образом:
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
 -- Haskell lang
 import qualified Math.NumberTheory.Primes.Factorisation as Factor
 task3 = maximum $ map fst ( Factor.factorise 600851475143)
@@ -36,7 +36,7 @@ task3 = maximum $ map fst ( Factor.factorise 600851475143)
 \end{lstlisting}
 
 Результат:
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 #Console
 austrotaxus@small-box:~/EulerProj$ stack ghci
 Using main module: Package `EulerProj' component exe:EulerProj-exe

@@ -6,7 +6,7 @@
 \usepackage{dirtytalk}
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
-\title{Project Euler Task 188}
+\title{Project Euler Task 4}
 \author{Козиний Сергей}
 \begin{document}    
 \maketitle
@@ -21,7 +21,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 Для решения задачи реализуем функцию проверки на палиндромность. Для этого число необходимо развернуть в список содержащихся в нем цифр, а затем проверить равен ли такой список самому себе, развёрнутому в обратном направлении:
 
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
   --Haskell lang
 import qualified Data.List as List
 toList x= List.unfoldr (\a -> case a of
@@ -32,11 +32,11 @@ isPoly x = x == reverse x
   
 \end{lstlisting}
 Процедура \\*
-$unfoldr :: (b -> Maybe (a, b)) -> b -> [a] $\\*
-по заданному зерну $seed$ типа $b$ воссоздает последовательность элементов $seq$ типа $a$ с помощью функции $func$ типа  $b -> Maybe (a, b)$, где на каждом шаге, правый элемент вычисляемой пары, обернутой в монаду $Maybe$ включается в результирующий список (если $Maybe(a,b)$ принимает значение $Nothing$, список обрывается и вычисление заканчивается), а левый - служит аргументом для $func$ на следующем шаге итерации. 
+$unfoldr :: (b -> Maybe (a, b)) -> b -> [a] $ (здесь и далее $"::"$ будет означать принадлежность к типу)
+по заданному зерну $seed :: b$ воссоздает последовательность элементов $seq :: a$ с помощью функции $func :: b -> Maybe (a, b)$, где на каждом шаге, правый элемент вычисляемой пары, обернутой в монаду $Maybe$ включается в результирующий список  а левый - служит аргументом для $func$ на следующем шаге итерации. Если на некотором шаге $Maybe(a,b)$ принимает значение $Nothing$, список заканчивается и вычисление обрывается. 
 
 Теперь построим список всех палиндромов трёхзначных чисел и найдем максимальный из них
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
   --Haskell lang
 task4 = maximum \$ filter (isPoly . toList)[a*b|a<-[999,998..100], b<-[999,998..100]]
     where toList x= List.unfoldr (\a -> case a of
@@ -48,7 +48,9 @@ task4 = maximum \$ filter (isPoly . toList)[a*b|a<-[999,998..100], b<-[999,998..
 
 Результат:
 
-\begin{lstlisting}
+
+\begin{lstlisting}[frame=single]
+
 #Console
 austrotaxus@small-box:~/EulerProj$ stack ghci
 Using main module: Package `EulerProj' component exe:EulerProj-exe
@@ -64,6 +66,7 @@ GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
 Ok, modules loaded: Lib, Main. 
 *Main Lib> task4
 906609
+
 \end{lstlisting}
 
 

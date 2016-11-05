@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{dirtytalk}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
+\title{Project Euler Task 10}
+\author{Козиний Сергей}
+\begin{document}    
+\maketitle
+\href{''https://projecteuler.net/problem=10''}{Problem 10}
+
+\say{
+
+
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.
+
+}\\
+
+Для нахождения суммы всех простых чисел до 2 000 000 воспользуемся функцией $primes$, определенной в пакете primes.
+$primes$ возврщает бесконечную последовательность всех простых чисел отсортированную в порядке их возрастания.
+
+Отберём все числа из $primes$ < 2 000 000, а затем найдем их сумму
+\begin{lstlisting}[language=Haskell, frame=single]
+--Haskell lang
+import qualified Data.Numbers.Primes as Primes
+task10::Integer
+task10 = sum $ takeWhile (<2000000) Primes.primes
+\end{lstlisting} \\*
+
+Тип $task10$ на всякий случай объявим $Integer$, чтобы задействовать вычисления в длинной арифметике.
+Результат:
+\begin{lstlisting}frame=single]
+#Console
+austrotaxus@small-box:~/EulerProj$ stack ghci
+Using main module: Package `EulerProj' component exe:EulerProj-exe
+with main-is file: /home/austrotaxus/EulerProj/app/Main.hs
+The following GHC options are incompatible with GHCi and have not
+been passed to it: -threaded
+Configuring GHCi with the following packages: EulerProj
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+[1 of 2] Compiling Lib
+( /home/austrotaxus/EulerProj/src/Lib.hs, interpreted )
+[2 of 2] Compiling Main
+( /home/austrotaxus/EulerProj/app/Main.hs, interpreted )
+Ok, modules loaded: Lib, Main. 
+*Main Lib> task10
+142913828922
+\end{lstlisting}
+
+Проект, содержащий это и другие решения можно найти по адрессу:\\*
+
+\url{https://github.com/Austrotaxus/EulerProj/}
+
+
+\end{document}

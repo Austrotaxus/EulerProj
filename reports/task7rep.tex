@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{dirtytalk}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
+\title{Project Euler Task 7}
+\author{Козиний Сергей}
+\begin{document}    
+\maketitle
+\href{''https://projecteuler.net/problem=5''}{Problem 5}
+
+\say{
+
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+What is the 10 001st prime number?
+
+}\\
+
+Для нахождения 10 001-го по счёту простого числа воспользуемся списком $primes$, который описанн в пакете $primes$
+
+\begin{lstlisting}[language=Haskell, frame=single]
+  --Haskell lang
+  primes :: Integral int => [int]
+\end{lstlisting} 
+
+$primes$ представляет собой бесконечную последовательность простых чисел в порядке возрастания.
+
+Поскольку в Haskell головной элемент списка имеет номер 0, программа, возвращающая 10001-е простое число будет выглядеть так:
+
+\begin{lstlisting}[language=Haskell, frame=single]
+  -- Haskell lang
+  import qualified Data.Numbers.Primes as Primes
+
+  task7::Integer
+  task7 = Primes.primes !! 10000
+\end{lstlisting}
+
+Результат:
+\begin{lstlisting}frame=single]
+#Console
+austrotaxus@small-box:~/EulerProj$ stack ghci
+Using main module: Package `EulerProj' component exe:EulerProj-exe
+with main-is file: /home/austrotaxus/EulerProj/app/Main.hs
+The following GHC options are incompatible with GHCi and have not
+been passed to it: -threaded
+Configuring GHCi with the following packages: EulerProj
+GHCi, version 7.10.3: http://www.haskell.org/ghc/  :? for help
+[1 of 2] Compiling Lib
+( /home/austrotaxus/EulerProj/src/Lib.hs, interpreted )
+[2 of 2] Compiling Main
+( /home/austrotaxus/EulerProj/app/Main.hs, interpreted )
+Ok, modules loaded: Lib, Main. 
+*Main Lib> task7
+104743
+\end{lstlisting}
+
+
+Проект, содержащий это и другие решения можно найти по адрессу:\\*
+
+\url{https://github.com/Austrotaxus/EulerProj/}
+
+\end{document}

@@ -7,7 +7,7 @@
 \usepackage{dirtytalk}
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
-\title{Project Euler Task 188}
+\title{Project Euler Task 2}
 \author{Козиний Сергей}
 \begin{document}    
 \maketitle
@@ -27,7 +27,7 @@ $unfoldr :: (b -> Maybe (a, b)) -> b -> [a] $,
 
 Вот как будет выглядеть последовательность чисел Фибоначчи в терминах $unfoldr$
 
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
   --Haskell lang
 import qualified Data.List as List
 fibs = List.unfoldr (\(a,b) -> Just (a,(b,a+b))) (0,1)  
@@ -35,7 +35,7 @@ fibs = List.unfoldr (\(a,b) -> Just (a,(b,a+b))) (0,1)
 Затраты на вычисление каждого следующего элемента списка можно оценить как  $O(1)$ по времени и памяти.
 
 Теперь, для того чтобы вычислить сумму всех чётных чисел Фибоначчи до 4000000 напишем следующую функцию.
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
   --Haskell lang
 task2 = sum $ filter isEven $ takeWhile (<4000000) fibs 
     where fibs = List.unfoldr (\(a,b) -> Just (a,(b,a+b))) (0,1)
@@ -44,7 +44,7 @@ task2 = sum $ filter isEven $ takeWhile (<4000000) fibs
 
 Результат:
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 #Console
 austrotaxus@small-box:~/EulerProj$ stack ghci
 Using main module: Package `EulerProj' component exe:EulerProj-exe

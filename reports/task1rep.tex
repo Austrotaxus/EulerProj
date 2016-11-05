@@ -6,8 +6,9 @@
 \usepackage[russian]{babel}
 \usepackage{dirtytalk}
 \usepackage{geometry}
+\usepackage{color}
 \geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=1.5cm}
-\title{Project Euler Task 188}
+\title{Project Euler Task 1}
 \author{Козиний Сергей}
 \begin{document}    
 \maketitle
@@ -23,7 +24,7 @@ $S_n = \frac {a_1 -  a_n} 2$
 
 По этой формуле можно было бы для всех чисел от 0 до 999 посчитать сумму всех элементов, которые делятся на 3, прибавить к ним сумму всех элементов, которые делятся на 5 и отнять сумму всех элементов которые делятся на 15. Однако учитывая, что чисел всего 1000, мы можем просто построить список всех чисел от 1 до 999, отфильтровать их по признакоу делимости на 5 или 3, и найти сумму получившегося результата
 
-\begin{lstlisting}[language=Haskell]
+\begin{lstlisting}[language=Haskell, frame=single]
 --Haskell lang
 task1::Int
 task1 = sum $ filter (\x -> (x `mod` 3 ==0) || (x `mod` 5 ==0))  [1..999]
@@ -31,7 +32,7 @@ task1 = sum $ filter (\x -> (x `mod` 3 ==0) || (x `mod` 5 ==0))  [1..999]
 
 Результат:
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 #Console
 austrotaxus@small-box:~/EulerProj$ stack ghci
 Using main module: Package `EulerProj' component exe:EulerProj-exe
