@@ -1,0 +1,56 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-08 17:31:56.041769 UTC
+
+interface Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib.Task78 7103
+  interface hash: 69ea18fc34baa39c6b06624baf4da9c6
+  ABI hash: 3ebd4252ab50fee5445794f30975f500
+  export-list hash: 906fef1867ced563dff6785bb4abda38
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: be56b72bd91dfdcf4558dd23faf8380d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Task78.task78
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array.Base a0576aaf9a801948417a257cfc0c6084
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array.ST d88c6a5ffc4a285f6725848851e6e1b3
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array.Unboxed babdfa1e5227a34735952147a45b17f7
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Control.Monad.ST 65e1a876a6fbc0923608cbfe8fcfe7e6
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.STRef 9ae8268474b447f47ebff37df24e8349
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.ST cebc788374fb85d3b05c02529a08e594
+import  -/  base-4.8.2.0:GHC.STRef 15b64156d5150a2da380e57e226c77df
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+043e2d65ecaa88b4594894ccb11a42c0
+  task1 ::
+    GHC.Prim.State# s -> (# GHC.Prim.State# s, [GHC.Types.Int] #)
+  {- Arity: 1 -}
+0b5e74d693d448697c5dc025d0ea17df
+  task78 :: GHC.Types.Int
+  {- Unfolding: (case GHC.ST.runSTRep
+                        @ [GHC.Types.Int]
+                        Lib.Task78.task1 of wild {
+                   [] -> GHC.List.badHead @ GHC.Types.Int : x ds1 -> x }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

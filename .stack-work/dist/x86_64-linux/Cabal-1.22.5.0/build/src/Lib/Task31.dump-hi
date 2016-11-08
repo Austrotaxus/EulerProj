@@ -1,0 +1,44 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-08 17:31:55.399903 UTC
+
+interface Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib.Task31 7103
+  interface hash: 58b9c67b7eaa1af7f4e3f0d91ead44a2
+  ABI hash: d42306ad74763186def8f6708b5570b6
+  export-list hash: f856f6ac4fbf4b7fae24b3ce72c3b757
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: be56b72bd91dfdcf4558dd23faf8380d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Task31.memoCoinsum
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array 6e22602c1cc5e362609f0924a7c0a209
+import  -/  base-4.8.2.0:Debug.Trace 6660afb6094d69397ea084364da8f950
+import  -/  base-4.8.2.0:GHC.Arr 70f35e6bfbc61995e045edb612354887
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+2283b93a72b9b44e6a057d30c1cc74dd
+  memoCoinsum ::
+    (GHC.Enum.Enum t, GHC.Num.Num t, GHC.Num.Num e, GHC.Arr.Ix t) =>
+    GHC.Types.Int -> t -> e
+  {- Arity: 4,
+     Strictness: <L,U(A,A,A,A,A,A,C(C1(U)),A)><L,U(A,C(C1(U)),A,A,A,A,C(U))><L,U(C(C1(U)),A,A,A,A,A,C(U))><L,U(U,A,A,C(C1(U(U))),C(C1(U)),A,C(U(U)))> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

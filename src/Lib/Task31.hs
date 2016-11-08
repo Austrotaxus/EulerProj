@@ -11,3 +11,5 @@ module Lib.Task31
                                               if (  s >= ( nominals !! ( n-1 ) ) )
                                               then (memoCoinsum n ( s - ( nominals !! ( n-1 ) ) ) )
                                               else 0
+
+      task31 = memoCoinsum 8 200

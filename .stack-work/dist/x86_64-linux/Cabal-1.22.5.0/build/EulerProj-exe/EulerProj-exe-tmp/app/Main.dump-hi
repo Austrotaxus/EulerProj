@@ -1,0 +1,103 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-07 23:06:52.573154 UTC
+
+interface main@main:Main 7103
+  interface hash: c88837973c786520a397be1e73347d7c
+  ABI hash: 88cfe941e8a949ff3456b4d9a2479eff
+  export-list hash: c3241f240372e6a67bc17335d815d0a1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a88b77e6774f026a70d62f666b63c862
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: EulerProj-0.1.0.0@Euler_82bVXWsGt0L910amkVhM7I
+                      arithmoi-0.4.1.3@arith_C4c4JmqdUJaEBNAlRHjNlW
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      primes-0.2.1.0@prime_KJP3fXLypK4KWfAjY8Wn1z
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+import  -/  EulerProj-0.1.0.0@Euler_82bVXWsGt0L910amkVhM7I:Lib d5dfbe8e58ac9ab0b05a934787d608e1
+import  -/  EulerProj-0.1.0.0@Euler_82bVXWsGt0L910amkVhM7I:Lib.Task31 773b78013ca2e69c5762739e0b7628b8
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+3fd254a3ee843e226946322d8d6cc308
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+5c936127f7ed885a0364a08e0f220b4b
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   eta) -}
+6e4f81a7ba75d87a8be32d8f2d0401c5
+  main2 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main3
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+2fcb1217a17b34ffcb03b87ea778c41f
+  main3 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Main.main6 Main.main5 Main.main4) -}
+74dd1bb21843bef61c22639f7c81147c
+  main4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 200) -}
+eb70cd9d8e5856e75ed83c0c9ffef3b9
+  main5 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8) -}
+703b99af15c451f33fed029662136ca7
+  main6 ::
+    GHC.Types.Int
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.Task31.memoCoinsum
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   GHC.Enum.$fEnumInteger
+                   GHC.Num.$fNumInteger
+                   GHC.Num.$fNumInteger
+                   GHC.Arr.$fIxInteger) -}
+65c55324c96638e139573b9524f1c578
+  main7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,105 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-08 17:31:56.269948 UTC
+
+interface Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib.Task4 7103
+  interface hash: 907d1f07fbea1b768401cfaa8ea6721a
+  ABI hash: b109fcd6de1c08bb3bfedac41c8abb6c
+  export-list hash: d33241750bbb4cbcb4b796ea1c903611
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: be56b72bd91dfdcf4558dd23faf8380d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Task4.task4
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+fef24df20dc515ef96b322c90f4fe628
+  task1 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Enum.enumDeltaToIntegerFB
+                   @ [GHC.Integer.Type.Integer]
+                   Lib.Task4.task6
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                   Lib.Task4.task5
+                   Lib.Task4.task3
+                   Lib.Task4.task2) -}
+c6f9b45a7029a1ff84f178e4336165b7
+  task2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 100) -}
+b963dddff7d17282ceb897fc54cd1ad5
+  task3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer -1) -}
+2179c1f31c2e62cf597374ebc72590cd
+  task4 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.List.strictMaximum
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Lib.Task4.task1) -}
+74c3d24fbc08aa87df0fa206cd930f9b
+  task4_go :: GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U> -}
+a99ae7440c22516e20a66691e7d552ce
+  task5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 999) -}
+b40c3fb12c7064c2db37389d2a82bce9
+  task6 ::
+    GHC.Integer.Type.Integer
+    -> [GHC.Integer.Type.Integer] -> [GHC.Integer.Type.Integer]
+  {- Arity: 2,
+     Unfolding: (\ ds :: GHC.Integer.Type.Integer
+                   ds1 :: [GHC.Integer.Type.Integer][OneShot] ->
+                 letrec {
+                   go :: [GHC.Integer.Type.Integer] -> [GHC.Integer.Type.Integer]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds2 :: [GHC.Integer.Type.Integer] ->
+                     case ds2 of wild {
+                       [] -> ds1
+                       : y ys
+                       -> let {
+                            x :: GHC.Integer.Type.Integer = GHC.Integer.Type.timesInteger ds y
+                          } in
+                          let {
+                            x1 :: [GHC.Integer.Type.Integer] = Lib.Task4.task4_go x
+                          } in
+                          case GHC.Classes.$fEq[]_$c==
+                                 @ GHC.Integer.Type.Integer
+                                 GHC.Integer.Type.$fEqInteger
+                                 x1
+                                 (GHC.List.reverse1
+                                    @ GHC.Integer.Type.Integer
+                                    x1
+                                    (GHC.Types.[] @ GHC.Integer.Type.Integer)) of wild1 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True
+                            -> GHC.Types.: @ GHC.Integer.Type.Integer x (go ys) } }
+                 } in
+                 go Lib.Task4.task7) -}
+6d0e9e6223a7d9d3811111c1e27484b3
+  task7 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Enum.enumDeltaToInteger
+                   Lib.Task4.task5
+                   Lib.Task4.task3
+                   Lib.Task4.task2) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

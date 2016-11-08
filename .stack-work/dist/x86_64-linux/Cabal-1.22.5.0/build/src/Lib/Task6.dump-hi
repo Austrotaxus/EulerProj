@@ -1,0 +1,72 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-08 17:31:56.202084 UTC
+
+interface Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib.Task6 7103
+  interface hash: a61251ff700fb5083f2cf3f9cc7c9e8c
+  ABI hash: cece4ff0d1ce5e66c9e533c96b8bd7c3
+  export-list hash: 18c593551cfc89eae7f1228929fa2511
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: be56b72bd91dfdcf4558dd23faf8380d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.Task6.task6
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
+6fe7d6c0aa0f060ae5e8599f6fed49d9
+  task1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.Task6.task6_go
+                   Lib.Task6.task6_delta
+                   Lib.Task6.task2) -}
+9a9c863b4ac0037d8c54de405188ac0e
+  task2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+176d6d6fd27ad3d1a53c3ec27dac1b7c
+  task3 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.timesInteger
+                   Lib.Task6.task6_x
+                   Lib.Task6.task6_x) -}
+d5df83e206cb6158336246d739c41c82
+  task6 :: GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Integer.Type.minusInteger
+                   Lib.Task6.task3
+                   Lib.Task6.task1) -}
+c1abe772b822b0dc690b4205552094ee
+  task6_delta :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+ae370ca36cf2fcc01b4d9ce33c1b3803
+  task6_go ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+005c8b32ca6141dd58df59a6db2ee457
+  task6_go1 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+8f5f6c8d99d7048a8c918f1105d3b76b
+  task6_x :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.Task6.task6_go1
+                   Lib.Task6.task6_delta
+                   Lib.Task6.task2) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
