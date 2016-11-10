@@ -42,12 +42,12 @@
   (major1) == 0 && (major2) <  2 || \
   (major1) == 0 && (major2) == 2 && (minor) <= 1)
 
-/* tool gcc-4.8 */
-#define TOOL_VERSION_gcc "4.8"
+/* tool gcc-5.4.0 */
+#define TOOL_VERSION_gcc "5.4.0"
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
-  (major1) <  4 || \
-  (major1) == 4 && (major2) <  8 || \
-  (major1) == 4 && (major2) == 8 && (minor) <= 0)
+  (major1) <  5 || \
+  (major1) == 5 && (major2) <  4 || \
+  (major1) == 5 && (major2) == 4 && (minor) <= 0)
 
 /* tool ghc-7.10.3 */
 #define TOOL_VERSION_ghc "7.10.3"
@@ -84,19 +84,19 @@
   (major1) == 0 && (major2) <  67 || \
   (major1) == 0 && (major2) == 67 && (minor) <= 0)
 
-/* tool pkg-config-0.26 */
-#define TOOL_VERSION_pkg_config "0.26"
+/* tool pkg-config-0.29.1 */
+#define TOOL_VERSION_pkg_config "0.29.1"
 #define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
   (major1) <  0 || \
-  (major1) == 0 && (major2) <  26 || \
-  (major1) == 0 && (major2) == 26 && (minor) <= 0)
+  (major1) == 0 && (major2) <  29 || \
+  (major1) == 0 && (major2) == 29 && (minor) <= 1)
 
-/* tool strip-2.24 */
-#define TOOL_VERSION_strip "2.24"
+/* tool strip-2.26 */
+#define TOOL_VERSION_strip "2.26"
 #define MIN_TOOL_VERSION_strip(major1,major2,minor) (\
   (major1) <  2 || \
-  (major1) == 2 && (major2) <  24 || \
-  (major1) == 2 && (major2) == 24 && (minor) <= 0)
+  (major1) == 2 && (major2) <  26 || \
+  (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
 #define CURRENT_PACKAGE_KEY "Euler_CXKf0AA2Udw4JRL7DCOEOh"
 

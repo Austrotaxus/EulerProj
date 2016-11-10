@@ -8,5 +8,5 @@ main :: IO ()
 main = do
   print ("The tasks are already implemented: " ++ ( show ( keys allTasks ) ))
   n <- readLn
-  x <- allTasks ! ((read n)  :: Int)
+  x <- allTasks ! ( n  :: Int)
   print x
