@@ -15,7 +15,7 @@ import Lib.Task78
 import Lib.Task188
 import Lib.Task92
 import Lib.Task31
-
+import Lib.Task24
 import Data.Map
 
 allTasks:: Map Int (IO String)
@@ -24,12 +24,12 @@ allTasks = fromList [(1,return (show task1)),
                      (3,return (show task3)),
                      (4,return (show task4)),
                      (5,return (show task5)),
-                     (6,return (show task6)),
-                   
+                     (6,return (show task6)),                   
                      (7,return (show task7)),
                      (8,return (show task8)),
                      (9,return (show task9)),
                      (10,return (show task10)),
+                     (24,return  task24),
                      (31,return (show task31)),
                      (92,return (show task92)),
                      (78,return (show task78)),

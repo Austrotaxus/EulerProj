@@ -16,7 +16,7 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib, Lib.Task1, Lib.Task2, Lib.Task3, Lib.Task4,
-                       Lib.Task5, Lib.Task6, Lib.Task7, Lib.Task8,  Lib.Task9, Lib.Task10, Lib.Task92, Lib.Task78, Lib.Task188, Lib.Task31
+                       Lib.Task5, Lib.Task6, Lib.Task7, Lib.Task8,  Lib.Task9, Lib.Task10, Lib.Task92, Lib.Task78, Lib.Task188, Lib.Task31, Lib.Task24
   build-depends:       base >= 4.7 && < 5
                      , array
                      , arithmoi
