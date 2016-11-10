@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-10 13:55:02.794566 UTC
+2016-11-10 21:12:42.702429 UTC
 
 interface Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib 7103
-  interface hash: 4b0538e58dd72e81fbf51d9b318bae75
-  ABI hash: 4c0fd13123619b4df733ef192565c294
+  interface hash: f2d69c6c7234556d1f84a2d8336790b6
+  ABI hash: 04c89a6f8e3800f260f495a5b5a702c1
   export-list hash: 63f2eb50aa58fe192b494903e7125675
   orphan hash: 16e7dc12811b6c2b3b83c1e264183b6d
   flag hash: 962af636f8e927040c7daa9c21457292
@@ -14,8 +14,8 @@ interface Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib 7103
 exports:
   Lib.allTasks
 module dependencies: Lib.Task1 Lib.Task10 Lib.Task188 Lib.Task2
-                     Lib.Task24 Lib.Task3 Lib.Task31 Lib.Task4 Lib.Task5 Lib.Task6
-                     Lib.Task7 Lib.Task78 Lib.Task8 Lib.Task9 Lib.Task92
+                     Lib.Task24 Lib.Task25 Lib.Task3 Lib.Task31 Lib.Task4 Lib.Task5
+                     Lib.Task6 Lib.Task7 Lib.Task78 Lib.Task8 Lib.Task9 Lib.Task92
 package dependencies: arithmoi-0.4.1.3@arith_C4c4JmqdUJaEBNAlRHjNlW
                       array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0
                       containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
@@ -54,6 +54,9 @@ import  -/  Lib.Task2 26ae5dc223bdb9a0372cc6de200b3093
 import  -/  Lib.Task24 2fcd0ba14e926ff13acd723f4a5b2e96
   exports: 6cd07c75e3df8377f592c10b63bb1557
   task24 0a68880f60750864c6d17fae632dc8c5
+import  -/  Lib.Task25 0caa77bbd701125bb5d56be63980a5a2
+  exports: 9b0d62712c0419f3bf826d241421e5f7
+  task25 cb1347acbf063ce7c0b71154cf8e7a41
 import  -/  Lib.Task3 65892cac27b4d354b487f909d868fc23
   exports: 1accab6d681d81a4d0631f8a8417f4c0
   task3 3fac34fb1faa2c426c1288ab9b997575
@@ -161,443 +164,472 @@ import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
     -> [(GHC.Types.Int, a)]
     -> Data.Map.Base.Map GHC.Types.Int a
   {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
-5333c994022368cdae5a882b5bad7192
+696b96326aa717c1f2aa0284ab927586
   allTasks ::
     Data.Map.Base.Map GHC.Types.Int (GHC.Types.IO GHC.Base.String)
   {- Unfolding: (Lib.$sfromList
                    @ (GHC.Types.IO GHC.Base.String)
                    Lib.allTasks1) -}
-9401e48904aaade56efe15dc77adea9d
+a351c153106824c5caf9606899b86216
   allTasks1 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks71
+                   Lib.allTasks76
                    Lib.allTasks2) -}
-d960510fb22f8bc28dc216b24d634b98
+f2cebca359f27ec0447a76545c7c1207
   allTasks10 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks35
+                   Lib.allTasks40
                    Lib.allTasks11) -}
-f02624bb6a3ea5774bdccd4d67af24f7
+f1d32b34100137fb3337caaa5a4300c4
   allTasks11 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks32
+                   Lib.allTasks37
                    Lib.allTasks12) -}
-010345ea8fcb11fd2f131194f181e0a6
+01fb66e8a4d4f24a887d99fb776c29c6
   allTasks12 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks28
+                   Lib.allTasks33
                    Lib.allTasks13) -}
-36740383d9a242c45a9d624bf6488387
+122e14f91f30e5b2131e1154f2a65aaf
   allTasks13 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks24
+                   Lib.allTasks29
                    Lib.allTasks14) -}
-2213e7b68a46477e19541f48b6180215
+463307e6d017b2fd6e3113c99a7813d4
   allTasks14 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks20
+                   Lib.allTasks25
                    Lib.allTasks15) -}
-16d08226bdf06d394b7cfa50f56e4c1d
+ea175c87e5b279579ba751dcf3ae2bdf
   allTasks15 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks16
+                   Lib.allTasks21
+                   Lib.allTasks16) -}
+d751f66697eaffb46160859ea78bb2b0
+  allTasks16 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks17
                    (GHC.Types.[] @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String))) -}
-9f28ddfeed068b9768a99549dbbda5b4
-  allTasks16 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks19,
-                  Lib.allTasks17
+7d0ce474b2f6d72a2303d6b9a571aebe
+  allTasks17 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks20,
+                  Lib.allTasks18
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-a0291084ebfd63e4c2be23461ea1f2ed
-  allTasks17 ::
+a7360dc0e65e7d0c9716309f22099f2a
+  allTasks18 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks18 #)) -}
-ce98a3d08b15cf82b63c2574603b8957
-  allTasks18 :: GHC.Base.String
+                 (# s, Lib.allTasks19 #)) -}
+e07713a9a4d3abf91b9d3884bc47b51d
+  allTasks19 :: GHC.Base.String
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Lib.Task25.task25
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+2c72691353a8591cfc6ac5208b1bcd4f
+  allTasks2 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks72
+                   Lib.allTasks3) -}
+1eb9b0ed39be51f250aa7e6441a3c478
+  allTasks20 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25) -}
+1f11a6b834acb8c3e96132fa1e7cee42
+  allTasks21 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks24,
+                  Lib.allTasks22
+                    `cast`
+                  (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
+453e92f11241afbaab67c04b75252c42
+  allTasks22 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (# s, Lib.allTasks23 #)) -}
+2768f978176d4a417a925778b6d2fb92
+  allTasks23 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task188.task188
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-55d684d42c31207d0281d2447eb00af8
-  allTasks19 :: GHC.Types.Int
+c9c23f526a0b2ce327dfe1111251e425
+  allTasks24 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 188) -}
-1165c3fb9113726aeacbd6f481f8a1fd
-  allTasks2 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
-  {- Unfolding: (GHC.Types.:
-                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks67
-                   Lib.allTasks3) -}
-366c3b12ef11dc24a97617212d58be88
-  allTasks20 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks23,
-                  Lib.allTasks21
+f6626f8879bd9cc11a3fbdcc0464f5dd
+  allTasks25 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks28,
+                  Lib.allTasks26
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-b3283020d4dd843844e2c8779bf9bf44
-  allTasks21 ::
+eab4c169842abf95467438a189cc9fc9
+  allTasks26 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks22 #)) -}
-268591246b07086f957c050c58e3007b
-  allTasks22 :: GHC.Base.String
+                 (# s, Lib.allTasks27 #)) -}
+250d8086d7272187126c6271cddf9f86
+  allTasks27 :: GHC.Base.String
   {- Unfolding: (case Lib.Task78.task78 of ww2 { GHC.Types.I# ww3 ->
                  case GHC.Show.$wshowSignedInt
                         0
                         ww3
                         (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
                  GHC.Types.: @ GHC.Types.Char ww5 ww6 } }) -}
-b99a2b87bdd318bf592268a6e78f6cbd
-  allTasks23 :: GHC.Types.Int
+2c412e7f1559bee4d29c8a4f91ae15c5
+  allTasks28 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 78) -}
-ecd0f58dae05328f86da450d916af92e
-  allTasks24 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks27,
-                  Lib.allTasks25
+0ef6bb6e443b80c70dd2563379bfe803
+  allTasks29 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks32,
+                  Lib.allTasks30
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-22ade52d6797c1edb1e9a45143b97e9d
-  allTasks25 ::
+c0bae8e3988e0a4a53759a2dd6ed4f30
+  allTasks3 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks68
+                   Lib.allTasks4) -}
+69d39908fb8515c8cf29b81f7ae8b3ef
+  allTasks30 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks26 #)) -}
-d087b31dc968e3a7e2c08471d1ec3d49
-  allTasks26 :: GHC.Base.String
+                 (# s, Lib.allTasks31 #)) -}
+340b612a374e2d6ade12507d2909800c
+  allTasks31 :: GHC.Base.String
   {- Unfolding: (case Lib.Task92.task92 of ww2 { GHC.Types.I# ww3 ->
                  case GHC.Show.$wshowSignedInt
                         0
                         ww3
                         (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
                  GHC.Types.: @ GHC.Types.Char ww5 ww6 } }) -}
-307daa431d6b21d875ef8735a260ad99
-  allTasks27 :: GHC.Types.Int
+645f8dbaf53775911d2e01d4befcbd78
+  allTasks32 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 92) -}
-14da6c9eca0d759c1254560f02ae3a57
-  allTasks28 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks31,
-                  Lib.allTasks29
+0318231889bad7b1042154ec33cb851a
+  allTasks33 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks36,
+                  Lib.allTasks34
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-4387ca819ee23854a04c802bba2c0bcb
-  allTasks29 ::
+bf59190aaeb372004f5458bc57441a32
+  allTasks34 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks30 #)) -}
-66f7575e9e5bdd6ecaa6f79a5677a790
-  allTasks3 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
-  {- Unfolding: (GHC.Types.:
-                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks63
-                   Lib.allTasks4) -}
-9151a703452a4e78309430ad7697f61f
-  allTasks30 :: GHC.Base.String
+                 (# s, Lib.allTasks35 #)) -}
+b7e66745fab57f9bc03427cb0466b129
+  allTasks35 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task31.task31
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-42359ba30f05ec42346160755a8158b4
-  allTasks31 :: GHC.Types.Int
+132dcd48db911ec961ceedd3a5dd7707
+  allTasks36 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 31) -}
-28a2d1a043aaa24e69b3dd60021fc0c5
-  allTasks32 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks34,
-                  Lib.allTasks33
+2b8c9161cfbafc12cb1542003d3abe42
+  allTasks37 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks39,
+                  Lib.allTasks38
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-9948c1756beb17327e9ec4e726ff7537
-  allTasks33 ::
+87a09ca923e46ee451c54d452d662d78
+  allTasks38 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  (# s, Lib.Task24.task24 #)) -}
-6edd88dd62c2ca319df4ce5aeec1d947
-  allTasks34 :: GHC.Types.Int
+f2d6310b4bb06f7dc8b16155b86d0831
+  allTasks39 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 24) -}
-7be9610e6cad0394b9e910f7ae1f54c2
-  allTasks35 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks38,
-                  Lib.allTasks36
+9dd4f81846a8b74adfea520baf3d831e
+  allTasks4 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks64
+                   Lib.allTasks5) -}
+4bb4f59246c799f563e6cc8bfb7177fb
+  allTasks40 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks43,
+                  Lib.allTasks41
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-52e00c1abb056afced067c635de10349
-  allTasks36 ::
+ab870253604bfc517329e67aad217281
+  allTasks41 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks37 #)) -}
-52b39a00d6a586878fbb6d40aa418381
-  allTasks37 :: GHC.Base.String
+                 (# s, Lib.allTasks42 #)) -}
+296e4814b63ffb843f75924c8d42035c
+  allTasks42 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task10.task10
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-c6fb4a90eb834abb45141d6a1121d9a2
-  allTasks38 :: GHC.Types.Int
+04ac8aee2166c214cb56410e09355405
+  allTasks43 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10) -}
-b24c6a0cbf8d7fdb9041d97b2ca9c942
-  allTasks39 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks42,
-                  Lib.allTasks40
+fb3418a1e0793b13c82af5e25f60e636
+  allTasks44 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks47,
+                  Lib.allTasks45
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-dffdb16d1c6fb6e7181c5bf7d465acc4
-  allTasks4 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
-  {- Unfolding: (GHC.Types.:
-                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks59
-                   Lib.allTasks5) -}
-71cadf00f63c3bd97893dbd80133c89b
-  allTasks40 ::
+7e40944ea4c2f72e825c850f6eb5ba03
+  allTasks45 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks41 #)) -}
-259cef2e976f8e781f41a1baccd20c27
-  allTasks41 :: GHC.Base.String
+                 (# s, Lib.allTasks46 #)) -}
+82a2cb9ea8c9f1235e724da24bcba38a
+  allTasks46 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task9.task9
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-27524f12519a86e1201a5a2eed8f53bf
-  allTasks42 :: GHC.Types.Int
+93e199bb10f98570c7df3def49276f88
+  allTasks47 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 9) -}
-f4efde19cfe2b86c20c36dc9f9ef233b
-  allTasks43 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks46,
-                  Lib.allTasks44
+055fe1d4a11cdeaa9c3b2b8713219650
+  allTasks48 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks51,
+                  Lib.allTasks49
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-339276829c36e719d8be0374254fab90
-  allTasks44 ::
+843e1726d6e8684060d4c1fc42ef270e
+  allTasks49 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks45 #)) -}
-4481d334bbe8cd0c17ed21566ae8efe1
-  allTasks45 :: GHC.Base.String
+                 (# s, Lib.allTasks50 #)) -}
+d32800401902a635d380e3e7d44e6066
+  allTasks5 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks60
+                   Lib.allTasks6) -}
+cbde5953b71b8c34f3433dc50406799e
+  allTasks50 :: GHC.Base.String
   {- Unfolding: (case Lib.Task8.task8 of ww2 { GHC.Types.I# ww3 ->
                  case GHC.Show.$wshowSignedInt
                         0
                         ww3
                         (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
                  GHC.Types.: @ GHC.Types.Char ww5 ww6 } }) -}
-709e4096e1232c59255e1e4a8ac362cc
-  allTasks46 :: GHC.Types.Int
+cb6df9956a4fc35d9234724d8ecccf05
+  allTasks51 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8) -}
-9d0246213e3ab01ecb91cc8d0a604cb7
-  allTasks47 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks50,
-                  Lib.allTasks48
+8295e6f3348c85d2623ccf41fbd28511
+  allTasks52 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks55,
+                  Lib.allTasks53
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-626d2baad81407bb7df907a72807643a
-  allTasks48 ::
+037b2163db2540c23a86a352ba9a9680
+  allTasks53 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks49 #)) -}
-9d6d2e349f29eb39d418908b7cf7aadb
-  allTasks49 :: GHC.Base.String
+                 (# s, Lib.allTasks54 #)) -}
+9f0e4abd627fa41673a4bb5132002201
+  allTasks54 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task7.task7
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-078e57904ccb7b7231663921a2d18f76
-  allTasks5 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
-  {- Unfolding: (GHC.Types.:
-                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks55
-                   Lib.allTasks6) -}
-307255a5abb3814515075a6e3d699e34
-  allTasks50 :: GHC.Types.Int
+bc71a714b13e7e8a8fc39fea3b8c622c
+  allTasks55 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 7) -}
-11d9a5293b3d40a81a50343a75a65d72
-  allTasks51 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks54,
-                  Lib.allTasks52
+8966b18ffa386c1429d158b69fb321a5
+  allTasks56 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks59,
+                  Lib.allTasks57
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-427b70d01db76f8684dc0acb3a17b002
-  allTasks52 ::
+2f8e2da9b49f4158192512e9a8ba5ca8
+  allTasks57 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks53 #)) -}
-a6e1a71cb9bb0c12ef57fa8acc23c447
-  allTasks53 :: GHC.Base.String
+                 (# s, Lib.allTasks58 #)) -}
+058f9a24447c3fe2c4502da58e8ce890
+  allTasks58 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task6.task6
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-a5ae553dcb67b88f100b280355102e36
-  allTasks54 :: GHC.Types.Int
+24a5354a3301b72a490c4ea11627a5dd
+  allTasks59 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 6) -}
-c8f29387e49306e3e9c92617337476f9
-  allTasks55 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks58,
-                  Lib.allTasks56
+1ba2ed994e46c7cc72eb1b5c053be85d
+  allTasks6 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks56
+                   Lib.allTasks7) -}
+96731bf5016c8de2c5157ab0c5356ca9
+  allTasks60 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks63,
+                  Lib.allTasks61
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-6b24b8e3a2cc8ed17ca0b332cb8c3932
-  allTasks56 ::
+a3889246082e9a2f1539bcd3f149d198
+  allTasks61 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks57 #)) -}
-6346b6b0f82817ce007df7dee9b78132
-  allTasks57 :: GHC.Base.String
+                 (# s, Lib.allTasks62 #)) -}
+9285c231eb4df9a33e5a334e9ecc6c0b
+  allTasks62 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task5.task5
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-03a3d90853c7a46ecfb872b588f5c624
-  allTasks58 :: GHC.Types.Int
+b2bc544ea5231f1e0ebb20d9afc59b8e
+  allTasks63 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5) -}
-834c7c756129bf620b14651bdad2313d
-  allTasks59 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks62,
-                  Lib.allTasks60
+a1bf22d0279406b5675d6913d06b0f22
+  allTasks64 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks67,
+                  Lib.allTasks65
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-eb945000f7fb9a0d7203ee5ed7bc8e43
-  allTasks6 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
-  {- Unfolding: (GHC.Types.:
-                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks51
-                   Lib.allTasks7) -}
-f0f177098a98d3eae3e66597ee151858
-  allTasks60 ::
+b8d8b02a708625407696821f01a306e6
+  allTasks65 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks61 #)) -}
-7188a7f3759b5d00e55958a9e6ad1182
-  allTasks61 :: GHC.Base.String
+                 (# s, Lib.allTasks66 #)) -}
+dcde8f0b8b8a12e76536e1410701a6c5
+  allTasks66 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task4.task4
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-53b546d959fb7c41f5d12b593e80fddb
-  allTasks62 :: GHC.Types.Int
+f079a582b2bf15bc215ad9d9ebbd27a8
+  allTasks67 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4) -}
-37b40d20ffcb363190e3a0113cfc5081
-  allTasks63 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks66,
-                  Lib.allTasks64
+da1a9b36a216b43945a9270588a3ae0d
+  allTasks68 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks71,
+                  Lib.allTasks69
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-f8339c658ee662273db898e29dba2883
-  allTasks64 ::
+993ea8582b85ccd69536ab00e2baa0ea
+  allTasks69 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks65 #)) -}
-3ba4b0b6999ec98b84329c9fd9001120
-  allTasks65 :: GHC.Base.String
+                 (# s, Lib.allTasks70 #)) -}
+b715ffda7a605bc0e6ff7ff61eea10f5
+  allTasks7 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+                   Lib.allTasks52
+                   Lib.allTasks8) -}
+20fea4c23b024f0cbd5c232194ae3390
+  allTasks70 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task3.task3
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-c0912762003af3a881a842e4cf91b28d
-  allTasks66 :: GHC.Types.Int
+4acf92f3112e5f65fbfabd58bb670bd9
+  allTasks71 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3) -}
-82c8a33a68426d54596256f0c75b8db9
-  allTasks67 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks70,
-                  Lib.allTasks68
+1e61b881e24015ff575c0773edb24914
+  allTasks72 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks75,
+                  Lib.allTasks73
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-ef807c0761cc182feabb5b4bca198667
-  allTasks68 ::
+ac261734da41edeb821cfabca0a0a203
+  allTasks73 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks69 #)) -}
-32bef8412dc277e0f268b856448f851e
-  allTasks69 :: GHC.Base.String
+                 (# s, Lib.allTasks74 #)) -}
+6aee3a7091b1a89baf83a9ee2180da3c
+  allTasks74 :: GHC.Base.String
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Lib.Task2.task2
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-e550c3ee6d69fe17f473a86968497d86
-  allTasks7 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
-  {- Unfolding: (GHC.Types.:
-                   @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks47
-                   Lib.allTasks8) -}
-985d3a0ec83583760bd888e7f21f42f3
-  allTasks70 :: GHC.Types.Int
+3a9cc5403f9a6ad0c293771798cbc804
+  allTasks75 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2) -}
-48ce45d131e29682842fe110362c3f49
-  allTasks71 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-  {- Unfolding: ((Lib.allTasks74,
-                  Lib.allTasks72
+a0e4183679ebcee48a586958e320a75e
+  allTasks76 :: (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
+  {- Unfolding: ((Lib.allTasks79,
+                  Lib.allTasks77
                     `cast`
                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)))) -}
-b68aa4a59b276ab025eda29aaa035597
-  allTasks72 ::
+ab82046d8ec1d88e5bf664401cead13e
+  allTasks77 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
   {- Arity: 1,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 (# s, Lib.allTasks73 #)) -}
-d83a9e86e58b2d89b1ddb44623da3b88
-  allTasks73 :: GHC.Base.String
+                 (# s, Lib.allTasks78 #)) -}
+7db40d5afbb9ef599362e926ad20228e
+  allTasks78 :: GHC.Base.String
   {- Unfolding: (case Lib.Task1.task1 of ww2 { GHC.Types.I# ww3 ->
                  case GHC.Show.$wshowSignedInt
                         0
                         ww3
                         (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
                  GHC.Types.: @ GHC.Types.Char ww5 ww6 } }) -}
-dda876cfa2c616681c384cd50be4595f
-  allTasks74 :: GHC.Types.Int
+1b27096b10c9e9925c3307cc72421f84
+  allTasks79 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1) -}
-9dc2eb5e3a7ae91d574aeb53a6a37d4f
+06c2f70db53f001d19b3abde4255ba9b
   allTasks8 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks43
+                   Lib.allTasks48
                    Lib.allTasks9) -}
-32117c9d550e614585670621ad8ec4e0
+81a5e1ff1c58266945f9719b4b07361d
   allTasks9 :: [(GHC.Types.Int, GHC.Types.IO GHC.Base.String)]
   {- Unfolding: (GHC.Types.:
                    @ (GHC.Types.Int, GHC.Types.IO GHC.Base.String)
-                   Lib.allTasks39
+                   Lib.allTasks44
                    Lib.allTasks10) -}
 "SPEC/Lib fromList @ Int _" [ALWAYS] forall @ a
                                             $dOrd :: GHC.Classes.Ord GHC.Types.Int

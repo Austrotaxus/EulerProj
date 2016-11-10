@@ -1,4 +1,4 @@
-module Lib where
+module Lib (allTasks) where
 
 import Lib.Task1
 import Lib.Task2
@@ -16,6 +16,7 @@ import Lib.Task188
 import Lib.Task92
 import Lib.Task31
 import Lib.Task24
+import Lib.Task25
 import Data.Map
 
 allTasks:: Map Int (IO String)
@@ -33,7 +34,8 @@ allTasks = fromList [(1,return (show task1)),
                      (31,return (show task31)),
                      (92,return (show task92)),
                      (78,return (show task78)),
-                     (188,return (show task188))]
+                     (188,return (show task188)),
+                     (25, return (show task25))]
 
 
 

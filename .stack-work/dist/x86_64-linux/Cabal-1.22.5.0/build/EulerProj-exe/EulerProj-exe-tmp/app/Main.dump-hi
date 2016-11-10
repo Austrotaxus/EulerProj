@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-10 13:55:04.952461 UTC
+2016-11-10 21:12:43.287793 UTC
 
 interface main@main:Main 7103
-  interface hash: c305531f2176abe89356037f9898bc56
-  ABI hash: e4f9a54047b072a1384aded096901f8d
+  interface hash: 3dbfb1366592c71a765da74763bb47c9
+  ABI hash: c35b05210a01fb540aeb64cb51251bb3
   export-list hash: f2a1b84f78b47057fb5eaaa6c53c86e5
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a88b77e6774f026a70d62f666b63c862
@@ -38,7 +38,7 @@ family instance modules: base-4.8.2.0:Control.Applicative
                          containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
                          containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
                          containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
-import  -/  EulerProj-0.1.0.0@Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib 4c0fd13123619b4df733ef192565c294
+import  -/  EulerProj-0.1.0.0@Euler_CXKf0AA2Udw4JRL7DCOEOh:Lib 04c89a6f8e3800f260f495a5b5a702c1
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
@@ -50,12 +50,12 @@ import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
   $wpoly_go10 ::
     GHC.Prim.Int# -> Data.Map.Base.Map GHC.Types.Int a -> a
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
-87260497c58b79d7fbf0e314c89080b3
+3cceee27ed1c41ca226f67feea3de5ed
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-0e7f88d3dab48101fc3a9fba72e46571
+5789c2f392a4af41ecbf9b0c2f686b01
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -123,13 +123,13 @@ import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
                    @ GHC.Types.Int
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                       @ GHC.Types.Int)) -}
-74d9320c1e2315c14d30dce7aabc79e6
+3a6e61f439c2cbc61ee0d70955063337
   main3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
                    GHC.Show.shows6
                    Main.main4) -}
-83cba5f3778b271ad3d69fcfb07ca20e
+b3b04397a3292652b7d370699114cd14
   main4 :: GHC.Base.String
   {- Unfolding: (GHC.Show.showLitString Main.main6 Main.main5) -}
 b66e53d89f66f8f84b25e0f19b212440
@@ -139,12 +139,12 @@ b66e53d89f66f8f84b25e0f19b212440
                    @ GHC.Types.Char
                    GHC.Show.shows6
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-1d129f4094f37c229e251b993aa3d1e1
+e446417778e0a1042b4873a729a4ea00
   main6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "The tasks are already implemented: "#
                    Main.main7) -}
-99c0fe6bc0fcaebf58ab226fafa21cbd
+9ae2d51e0a19c6f6670a3d16d5d87a08
   main7 :: [GHC.Types.Char]
   {- Unfolding: (case Data.Map.Base.keys1
                         @ GHC.Types.Int
@@ -165,7 +165,7 @@ b66e53d89f66f8f84b25e0f19b212440
                                 ww1
                                 (Main.main_showl xs) of ww2 { (#,#) ww3 ww4 ->
                          GHC.Types.: @ GHC.Types.Char ww3 ww4 } }) }) -}
-4895520d55cd1e9523c87d62a11486c7
+fcb1d9fa2158f2fa6a3e13540df2e6d1
   main8 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
